@@ -4,20 +4,18 @@ $(document).ready(function(){
     $(document).on('click', '#generate-code-button', function(){
         console.log("document was clicked");
 
-        // $('#short-desc').empty();
-        // $('#things-to-know').empty();
         $('#generated-code').empty();
 
 
         let desc = $('#short-desc').val();
-        console.log(desc);
+        // console.log(desc);
 
         let thingsToKnowBolded = $('#things-to-know-bolded').val();
-        console.log(thingsToKnowBolded);
+        // console.log(thingsToKnowBolded);
 
-        let thingsToKnowGeneral = $('#things-to-know-general').val();
-        console.log(thingsToKnowGeneral);
-
+        let thingsToKnowGeneral = $('#things-to-know-general').val().replace(/\n/g, '<br/>');;
+        // console.log(thingsToKnowGeneral);
+ 
         let code = 
         `<table style="height: 500px;" width="100%">
         <tbody>
@@ -38,7 +36,7 @@ $(document).ready(function(){
         <tr style="height: 234px;">
         <td style="height: 234px; vertical-align: top; color: orange; font-size: 15px;">
         <p><strong><span style="color: #ffa500; font-size: 15px;">${thingsToKnowBolded}</span></strong></p>
-        <p><span style="color: #ffa500; font-size: 15px;">${thingsToKnowGeneral}</span></p>
+        <p><span style="color: #ffa500; font-size: 15px;>${thingsToKnowGeneral}</span></p>
         </td>
         </tr>
         <tr style="height: 125px;">
