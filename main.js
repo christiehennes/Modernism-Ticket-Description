@@ -12,8 +12,11 @@ $(document).ready(function(){
         let desc = $('#short-desc').val();
         console.log(desc);
 
-        let thingsToKnow = $('#things-to-know').val();
-        console.log(thingsToKnow);
+        let thingsToKnowBolded = $('#things-to-know-bolded').val();
+        console.log(thingsToKnowBolded);
+
+        let thingsToKnowGeneral = $('#things-to-know-general').val();
+        console.log(thingsToKnowGeneral);
 
         let code = 
         `<table style="height: 500px;" width="100%">
@@ -22,7 +25,7 @@ $(document).ready(function(){
         <td style="height: 3px; background-color: white;">&nbsp;</td>
         </tr>
         <tr style="height: 30px;">
-        <td style="height: 30px; background-color: white;"><span style="font-size: 12px;"><strong>${desc}/strong></span></td>
+        <td style="height: 30px; background-color: white;"><span style="font-size: 12px;"><strong>${desc}</strong></span></td>
         </tr>
         <tr style="height: 10px;">
         <td style="height: 10px; background-color: white; font-weight: bold; color: white;">&nbsp;</td>
@@ -34,7 +37,8 @@ $(document).ready(function(){
         </tr>
         <tr style="height: 234px;">
         <td style="height: 234px; vertical-align: top; color: orange; font-size: 15px;">
-        <p><span style="color: #ffa500; white-space: pre-wrap;">${thingsToKnow}</span></p>
+        <p><strong><span style="color: #ffa500; font-size: 15px;">${thingsToKnowBolded}</span></strong></p>
+        <p><span style="color: #ffa500; font-size: 15px;">${thingsToKnowGeneral}</span></p>
         </td>
         </tr>
         <tr style="height: 125px;">
