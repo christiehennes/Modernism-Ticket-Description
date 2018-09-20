@@ -10,10 +10,10 @@ $(document).ready(function(){
         let desc = $('#short-desc').val();
         // console.log(desc);
 
-        let thingsToKnowBolded = $('#things-to-know-bolded').val();
+        let thingsToKnowBolded = $('#things-to-know-bolded').val().replace(/\n/g, '<br/>');
         // console.log(thingsToKnowBolded);
 
-        let thingsToKnowGeneral = $('#things-to-know-general').val().replace(/\n/g, '<br/>');;
+        let thingsToKnowGeneral = $('#things-to-know-general').val().replace(/\n/g, '<br/>');
         // console.log(thingsToKnowGeneral);
  
         let code = 
