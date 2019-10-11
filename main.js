@@ -17,7 +17,7 @@ $(document).ready(function(){
         // console.log(thingsToKnowGeneral);
  
         let code = 
-        `<table style="height: 500px; width=100%">
+        `<table style="height: 500px;">
         <tbody>
         <tr style="height: 3px;">
         <td style="height: 3px; background-color: white;">&nbsp;</td>
