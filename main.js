@@ -17,7 +17,7 @@ $(document).ready(function(){
         // console.log(thingsToKnowGeneral);
  
         let code = 
-        `<table style="height: 500px;" width="100%">
+        `<table style="height: 500px; width=100%">
         <tbody>
         <tr style="height: 3px;">
         <td style="height: 3px; background-color: white;">&nbsp;</td>
@@ -36,7 +36,7 @@ $(document).ready(function(){
         <tr style="height: 234px;">
         <td style="height: 234px; vertical-align: top; font-size: 15px;">
         <p><strong><span style="font-size: 15px;">${thingsToKnowBolded}</span></strong></p>
-        <p><span style="font-size: 15px;>${thingsToKnowGeneral}</span></p>
+        <p><span style="font-size: 15px;">${thingsToKnowGeneral}</span></p>
         </td>
         </tr>
         <tr style="height: 125px;">
